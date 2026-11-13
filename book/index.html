@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>康康文章</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #121212;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            gap: 4rem;
+            padding: 2rem;
+        }
+
+        .welcome-text {
+            font-size: clamp(3rem, 15vw, 8rem);
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+        }
+
+        .button-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .nav-button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.8rem 1rem;
+            background-color: #1e1e1e;
+            border: 1px solid #333333;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            color: #fff;
+        }
+
+        .nav-button:hover {
+            background-color: #2a2a2a;
+            border-color: #555555;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .btn-main-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-sub-text {
+            font-size: 0.9rem;
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-text">康康文章</div>
+    
+    <div class="button-group">
+        <!-- 按钮1：跳转至JMH -->
+        <a href="https://c3-h2-r1.github.io/junmao/book/JMH" target="_blank" class="nav-button">
+            <span class="btn-main-text">JMH</span>
+            <span class="btn-sub-text">根本没有这样的文章</span>
+        </a>
+    </div>
+</body>
+</html>

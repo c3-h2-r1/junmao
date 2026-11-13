@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>JMH-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #121212;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            gap: 4rem;
+            padding: 2rem;
+        }
+
+        .read-text {
+	    max-width: 70%;
+	    white-space: pre-wrap;
+	    word-break: break-all; 
+            color: #E0E0E0;
+            font-size: 19px; 
+            letter-spacing: 0.03em; 
+            line-height: 1.6; 
+            word-spacing: 0.02em;
+        }
+
+	.title-large {
+	    color: #E0E0E0;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            letter-spacing: 0.1em; 
+            line-height: 1.2;
+        }
+	 .button-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .nav-button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.8rem 1rem;
+            background-color: #1e1e1e;
+            border: 1px solid #333333;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            color: #fff;
+        }
+
+        .nav-button:hover {
+            background-color: #2a2a2a;
+            border-color: #555555;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .btn-main-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-sub-text {
+            font-size: 0.9rem;
+            color: #aaaaaa;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="title-large">郡猫开天辟地，五行八卦浮现。</div>
+    
+    <div class="read-text">    从前有一个郡猫，被困于机房内，沉睡998244353年后，终于醒来，他抄起矿泉水瓶，朝机房砸去。__int128沉下去，bool浮上去，他担心世界会塌下，便头顶天，脚蹬地，10086年后他累死了。但他的左眼唤作AC，右眼变换为WA，骨骼成了高精度，血液化为for循环。</div>
+
+    <div class="read-text">    后来世间万物孕育出五行：AC代表光明，WA代表黑暗，TLE代表时间，MLE代表空间，CE代表法度。又有八卦：int对整型，float对浮点，bool对二元，char对字符，if对因果，while对循环，return对结束，void对虚无。</div>
+
+    <div class="button-group">
+        <a href="https://c3-h2-r1.github.io/junmao/book/JMH/page/0" target="_blank" class="nav-button">
+            <span class="btn-main-text">上一章</span>
+        </a>
+        <a href="https://c3-h2-r1.github.io/junmao" target="_blank" class="nav-button">
+            <span class="btn-main-text">首页</span>
+        </a>
+        <a href="https://c3-h2-r1.github.io/junmao/book/JMH/page/2" target="_blank" class="nav-button">
+            <span class="btn-main-text">下一章</span>
+        </a>
+    </div>
+    </body>
+</html>
